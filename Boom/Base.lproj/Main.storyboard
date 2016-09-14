@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3w-v6-uyW">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-Uy-Qya">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="47R-8M-fjk"/>
+                                            <constraint firstAttribute="width" constant="292" id="7qz-rg-Qm2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="ENTER IF YOU DARE...">
+                                            <color key="titleColor" red="0.3871061562" green="0.75518528760000003" blue="0.74551630010000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwj-fa-S7F"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert icon" translatesAutoresizingMaskIntoConstraints="NO" id="7kC-7b-Rwp">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="OeJ-wq-qIw"/>
+                                            <constraint firstAttribute="width" constant="60" id="Q6Z-B6-Zkk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is sending you a virus, make sure to go back before you're in trouble" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NV-Z3-DxI">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="2Qc-r3-cla"/>
+                                            <constraint firstAttribute="width" constant="345" id="jta-t5-zEZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIRUS DETECTED!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjF-Pj-5cw">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="214" id="mzj-Wk-gub"/>
+                                            <constraint firstAttribute="height" constant="25" id="wf5-AE-0cW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38823529411764707" green="0.75686274509803919" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sjF-Pj-5cw" firstAttribute="centerX" secondItem="o3w-v6-uyW" secondAttribute="centerX" id="88C-Mq-mHA"/>
+                                    <constraint firstItem="7kC-7b-Rwp" firstAttribute="centerX" secondItem="o3w-v6-uyW" secondAttribute="centerX" id="9Gu-No-pCh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="kXF-Uy-Qya" secondAttribute="bottom" constant="20" id="DNj-fM-hOF"/>
+                                    <constraint firstItem="7kC-7b-Rwp" firstAttribute="top" secondItem="o3w-v6-uyW" secondAttribute="topMargin" constant="63" id="Qqi-gU-WlH"/>
+                                    <constraint firstItem="8NV-Z3-DxI" firstAttribute="centerX" secondItem="o3w-v6-uyW" secondAttribute="centerX" id="X8b-9j-5QB"/>
+                                    <constraint firstItem="sjF-Pj-5cw" firstAttribute="top" secondItem="7kC-7b-Rwp" secondAttribute="bottom" constant="45" id="lcw-rg-VZJ"/>
+                                    <constraint firstItem="kXF-Uy-Qya" firstAttribute="centerX" secondItem="o3w-v6-uyW" secondAttribute="centerX" id="oyl-pO-qk6"/>
+                                    <constraint firstItem="8NV-Z3-DxI" firstAttribute="top" secondItem="sjF-Pj-5cw" secondAttribute="bottom" constant="17" id="saz-Jv-uAD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o3w-v6-uyW" secondAttribute="trailing" id="DJI-ng-8im"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o3w-v6-uyW" secondAttribute="bottom" id="UMX-Xc-uDe"/>
+                            <constraint firstItem="o3w-v6-uyW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZBs-uA-uYD"/>
+                            <constraint firstItem="o3w-v6-uyW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hiN-No-tc2"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="bg" destination="o3w-v6-uyW" id="DIS-cp-aKS"/>
+                        <outlet property="btnOutlet" destination="kXF-Uy-Qya" id="ofb-b1-ioI"/>
+                        <outlet property="infoLabel" destination="8NV-Z3-DxI" id="UYc-HB-7UQ"/>
+                        <outlet property="virusIcon" destination="7kC-7b-Rwp" id="G4z-GK-wBE"/>
+                        <outlet property="virusLabel" destination="sjF-Pj-5cw" id="nfc-mp-aXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alert icon" width="68" height="60"/>
+    </resources>
+</document>
