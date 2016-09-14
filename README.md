@@ -8,4 +8,4 @@
 
 #### Landscape:
 <img src="https://github.com/iOS-10/Boom/blob/master/landscape%20first.png">
-<img src="https://github.com/iOS-10/Boom/blob/master/landscape%20second.png>
+<img src="https://github.com/iOS-10/Boom/blob/master/landscape%20second.png">
